@@ -1,0 +1,326 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #191c32;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* header*/
+
+header {
+    position: fixed;
+    width: 100%;
+    
+}
+.navbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.brand span {
+    color: aqua;
+}
+
+.menu {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    gap: 5px;
+    margin-left: 8px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu .active {
+    color: aqua;
+}
+
+.menu a:hover {
+    color: aqua;
+}
+
+
+/*section 1 */
+
+.home {
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(1 ,1fr 1fr);
+}
+
+.info-home {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.title-home{
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+.home span {
+    color: aqua;
+}
+
+.dowload{
+    padding: 10px 10px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;  
+}
+
+.conoceme .dowload {
+    padding: 10px 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer; 
+    font-weight: bold;
+    margin-top: 10px;
+}
+.portafolio .dowload {
+    padding: 10px 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer; 
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.contact .dowload {
+    width: 130PX;
+    height: 40PX;
+    padding: 6px 4px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer; 
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    justify-self: center;
+}
+
+
+.dowload:hover {
+    background-color: white;
+}
+
+
+.imagen-home{
+    display: grid;
+    width: 95%;
+    justify-content: center;
+    align-content: center;
+}
+
+.imagen {
+    width: 170px;
+    margin-left: 5px;
+    border: 4px solid aqua;
+}
+
+
+.conoceme {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    color: black;
+    background-color: white;
+    align-items: center;
+}
+
+.about {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.about-info {
+    width: 90%;
+    padding: 5px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.conoceme h2 {
+    font-size: 1.5rem;
+    margin: 0 auto;   
+
+}
+
+.divider {
+    height: 4px;
+    width: 60px;
+    background-color: aqua;
+    margin-bottom: 30px;
+}
+
+.portafolio {
+    display: grid;
+    width: 100%;
+}
+
+.portafolio h2 {
+    margin: 0px;
+    padding: 0px;
+    margin-left: 10px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    margin: 0px;
+    justify-items: center;
+    color: black;
+    margin-bottom: 50px;
+    gap: 20px;
+    
+    
+}
+
+.cards {
+    display: grid;
+    width: 80%;
+    text-align: center;
+    background-color: white;
+    justify-items: center;
+    border-radius: 15px;
+}
+.cards-title {
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+div.cards-image {
+    width: 100%;
+}
+
+
+
+/*contact*/
+
+.contact {
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding-bottom: 50px;
+}
+
+.header-contact {
+    padding-top: 50px;
+    padding-left: 65%;
+    
+}
+
+.container-contact {
+    display: grid;
+    margin-top: 30px;  
+}
+
+.container-contact h3 {
+    margin-left: 10px;  
+}
+
+.formulario {
+    display: grid;
+    margin-top: 10px;
+    gap: 5px;
+   justify-content: center;
+}
+
+.input-formulario {
+    text-align: center;
+     background-color: black;
+     color: white;
+}
+
+.mensaje-formulario {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+/*footer*/
+
+
+
+.container-footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin: 0px;
+    
+}
+
+.title-footer  {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.title-footer h2 {
+    color: aqua;
+}
+
+.link-footer {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none;
+    color: white;
+    margin: 15px 0;
+}
+
+.link-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.copiryght {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+}
