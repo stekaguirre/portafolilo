@@ -10,6 +10,8 @@ body{
     padding: 0px;
 }
 
+
+
 /* header*/
 
 header {
@@ -19,7 +21,7 @@ header {
 }
 .navbar {
     width: 100%;
-    height: 70px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,11 +58,12 @@ header {
 }
 
 
-/*section 1 */
+/*SECTION 1  HOME */
 
 .home {
     width: 100%;
-    height: 500px;
+    min-width: 300px;
+    height: 450px;
     display: grid;
     grid-template-columns: repeat(1 ,1fr 1fr);
 }
@@ -90,47 +93,12 @@ header {
     border-radius: 20px;
     cursor: pointer;
     font-weight: bold;  
+    margin-top: 20px;
 }
-
-.conoceme .dowload {
-    padding: 10px 20px;
-    background-color: aqua;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer; 
-    font-weight: bold;
-    margin-top: 10px;
-}
-.portafolio .dowload {
-    padding: 10px 20px;
-    background-color: aqua;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer; 
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.contact .dowload {
-    width: 130PX;
-    height: 40PX;
-    padding: 6px 4px;
-    background-color: aqua;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer; 
-    font-weight: bold;
-    color: black;
-    text-align: center;
-    justify-self: center;
-}
-
 
 .dowload:hover {
     background-color: white;
 }
-
 
 .imagen-home{
     display: grid;
@@ -146,56 +114,97 @@ header {
 }
 
 
+
+/*SECTION 2 CONOCEME*/
+
 .conoceme {
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(2 ,1fr);
+    width: 100%;
+    min-width: 300px;
+    height: 450px;
+    margin: 0px;
+    padding: 0px; 
     color: black;
     background-color: white;
-    align-items: center;
 }
 
 .about {
     display: flex;
     width: 100%;
     justify-content: center;
+    align-items: center;
     
 }
 
 .about-info {
     width: 90%;
-    padding: 5px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 70px;
 }
 
 .conoceme h2 {
-    font-size: 1.5rem;
-    margin: 0 auto;   
-
+    display: flex;
+    justify-content: end; 
 }
 
-.divider {
-    height: 4px;
+.conoceme .divider {
+    display: flex;
     width: 60px;
+    height: 4px;
     background-color: aqua;
-    margin-bottom: 30px;
+    align-self: end;
+    margin-right: 45px;
+    justify-content: end; 
 }
+
+.conoceme p {
+    display: flex;
+    margin-top: 60px;
+}
+
+.conoceme .dowload {
+    padding: 10px 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer; 
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+
+/*SECTION 3 PORTAFOLIO*/
 
 .portafolio {
     display: grid;
     width: 100%;
+    min-width: 300px;
+}
+
+.portafolio-titulo {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    margin-left: 10px;
 }
 
 .portafolio h2 {
     margin: 0px;
-    padding: 0px;
-    margin-left: 10px;
-    margin-top: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+.portafolio .divider {
+    display: flex;
+    width: 60px;
+    height: 4px;
+    background-color: aqua;
+    align-self: end;
+    margin-right: 45px;
+    justify-content: end; 
 }
 
 .container {
@@ -205,14 +214,13 @@ header {
     justify-items: center;
     color: black;
     margin-bottom: 50px;
-    gap: 20px;
-    
-    
+    gap: 20px;   
 }
 
 .cards {
     display: grid;
     width: 80%;
+    min-width: 240px;
     text-align: center;
     background-color: white;
     justify-items: center;
@@ -220,39 +228,66 @@ header {
 }
 .cards-title {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     font-weight: bolder;
     font-size: 2rem;
 }
 
 div.cards-image {
     width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.portafolio .dowload {
+    padding: 10px 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer; 
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
 
-/*contact*/
+/*SECTION 4 CONTACTO*/
 
 .contact {
     width: 100%;
+    min-width: 300px;
     background-color: white;
     color: black;
-    padding-bottom: 50px;
 }
 
 .header-contact {
-    padding-top: 50px;
-    padding-left: 65%;
-    
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    justify-content: end;
+    align-items: end;
+    margin-right: 10px; 
+}
+
+.contact .divider {
+    width: 60px;
+    height: 4px;
+    background-color: aqua;
+    justify-content: end; 
 }
 
 .container-contact {
+    width: 100%;
     display: grid;
-    margin-top: 30px;  
+    margin-top: 20px;
+    
 }
 
 .container-contact h3 {
     margin-left: 10px;  
+    margin-bottom: 10px;
 }
 
 .formulario {
@@ -264,14 +299,30 @@ div.cards-image {
 
 .input-formulario {
     text-align: center;
-     background-color: black;
-     color: white;
+    background-color: black;
+    color: white;
+    
 }
 
 .mensaje-formulario {
     text-align: center;
     background-color: black;
     color: white;
+}
+
+.contact .dowload {
+    width: 130PX;
+    height: 40PX;
+    padding: 6px 4px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer; 
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    justify-self: center;
+    margin-bottom: 50px;
 }
 
 
